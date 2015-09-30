@@ -1,0 +1,19 @@
+*** PhoneWindowManager.smali	2015-09-29 11:58:24.976337388 -0700
+--- PhoneWindowManager.smali	2015-09-29 11:59:02.836338491 -0700
+***************
+*** 11954,11959 ****
+  
+      if-eqz v12, :cond_19
+  
+      invoke-interface {v11}, Lcom/android/internal/telephony/ITelephony;->endCall()Z
+      :try_end_5
+      .catch Landroid/os/RemoteException; {:try_start_5 .. :try_end_5} :catch_2
+--- 12008,12015 ----
+  
+      if-eqz v12, :cond_19
+  
++     if-eqz p3, :cond_19
++ 
+      invoke-interface {v11}, Lcom/android/internal/telephony/ITelephony;->endCall()Z
+      :try_end_5
+      .catch Landroid/os/RemoteException; {:try_start_5 .. :try_end_5} :catch_2

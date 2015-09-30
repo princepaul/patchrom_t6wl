@@ -1,0 +1,19 @@
+*** PowerManagerService.smali	2015-09-29 11:58:24.284337367 -0700
+--- PowerManagerService.smali	2015-09-29 11:59:02.204338473 -0700
+***************
+*** 1385,1390 ****
+  
+      .end local v3    # "wakeLock":Lcom/android/server/power/PowerManagerService$WakeLock;
+      :cond_2
+      const/16 v5, 0xaa4
+  
+      invoke-static {v5, v2}, Landroid/util/EventLog;->writeEvent(II)I
+--- 1387,1394 ----
+  
+      .end local v3    # "wakeLock":Lcom/android/server/power/PowerManagerService$WakeLock;
+      :cond_2
++     invoke-static {p3}, Lcom/android/server/power/PowerManagerServiceInjector;->checkWhenSleepRequestedLocked(I)V
++ 
+      const/16 v5, 0xaa4
+  
+      invoke-static {v5, v2}, Landroid/util/EventLog;->writeEvent(II)I

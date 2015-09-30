@@ -1,0 +1,19 @@
+*** ./smali/com/android/server/LocationManagerService$Receiver.smali	2015-09-29 11:58:24.156337364 -0700
+--- /home/mrx/rom/one/temp/new_smali/services.jar.out/./smali/com/android/server/LocationManagerService$Receiver.smali	2015-09-29 11:59:02.064338469 -0700
+***************
+*** 13,19 ****
+  .end annotation
+  
+  .annotation system Ldalvik/annotation/InnerClass;
+!     accessFlags = 0x12
+      name = "Receiver"
+  .end annotation
+  
+--- 13,19 ----
+  .end annotation
+  
+  .annotation system Ldalvik/annotation/InnerClass;
+!     accessFlags = 0x10
+      name = "Receiver"
+  .end annotation
+  

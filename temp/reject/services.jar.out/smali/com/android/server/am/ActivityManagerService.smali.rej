@@ -1,0 +1,38 @@
+*** ActivityManagerService.smali	2015-09-29 11:58:19.692337234 -0700
+--- ActivityManagerService.smali	2015-09-29 11:58:57.524338336 -0700
+***************
+*** 1586,1591 ****
+      .local v13, "systemDir":Ljava/io/File;
+      invoke-virtual {v13}, Ljava/io/File;->mkdirs()Z
+  
+      new-instance v0, Lcom/android/server/am/BatteryStatsService;
+  
+      new-instance v1, Ljava/io/File;
+--- 1586,1593 ----
+      .local v13, "systemDir":Ljava/io/File;
+      invoke-virtual {v13}, Ljava/io/File;->mkdirs()Z
+  
++     invoke-static {}, Lcom/android/server/am/ExtraActivityManagerService;->init()V
++ 
+      new-instance v0, Lcom/android/server/am/BatteryStatsService;
+  
+      new-instance v1, Ljava/io/File;
+***************
+*** 3862,3867 ****
+  
+      .end local p3    # "intent":Landroid/content/Intent;
+      .local v15, "intent":Landroid/content/Intent;
+      const/16 v3, 0x10
+  
+      invoke-virtual {v15, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+--- 3880,3889 ----
+  
+      .end local p3    # "intent":Landroid/content/Intent;
+      .local v15, "intent":Landroid/content/Intent;
++     move-object/from16 v0, p2
++ 
++     invoke-virtual {v15, v0}, Landroid/content/Intent;->setSender(Ljava/lang/String;)V
++ 
+      const/16 v3, 0x10
+  
+      invoke-virtual {v15, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
