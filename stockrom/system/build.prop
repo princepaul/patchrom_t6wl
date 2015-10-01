@@ -1,0 +1,288 @@
+ro.build.project=M7_UL_K44_STOCK_UI_MR:343518
+ro.build.project=M7_UL_K44_STOCK_UI_MR:343518
+ro.ril.oem.ecclist=911
+ro.ril.oem.nosim.ecclist=911
+ro.ril.enable.a53=1
+ro.ril.enable.dtm=1
+ro.ril.hsdpa.category=14
+ro.ril.hsupa.category=6
+ro.ril.hsxpa=4
+ro.ril.disable.fd.plmn.prefix=23402,23410,23411,23420,23594,27202,27205
+ro.ril.enable.managed.roaming=1
+ro.ril.enable.sdr=1
+ro.ril.oem.show.act=1
+ro.ril.enable.amr.wideband=0
+ro.ril.enable.r8fd=1
+ro.ril.disable.cpc=1
+ro.product.locale.language=en
+ro.product.locale.region=US
+ro.com.google.clientidbase=android-htc-rev
+ro.product.model=HTC One max
+ro.config.htc.enableCOTA=1
+ro.ril.enable.pre_r8fd=1
+ro.ril.fd.pre_r8_tout.scr_off=2
+ro.ril.fd.pre_r8_tout.scr_on=3
+ro.ril.fd.r8_tout.scr_off=2
+ro.ril.fd.r8_tout.scr_on=3
+ro.ril.ltefgi=1578105984
+# begin build properties
+htc.build.stage=2
+ro.aa.rid=106
+ro.cwkey=BS_US001
+ro.aa.skulist=1540
+ro.aa.customizationid=802346
+ro.aa.taskid=377624
+ro.onecid=1
+ro.aa.project=T6_UL_K44_SENSE60_MR
+ro.aa.mainsku=1540
+ro.aa.modelid=0P3P50000
+ro.prot=true
+ro.aa.romver=3.15.1540.1
+ro.aa.maincid=BS_US001
+ro.aa.report=com
+ro.aa.cidlist=BS_US001
+ro.build.id=KOT49H.H1
+ro.build.display.id=KOT49H.H1 release-keys
+ro.build.version.incremental=288144
+ro.build.version.sdk=19
+ro.build.version.codename=REL
+ro.build.version.release=4.4.2
+ro.build.date=一 12月  9 00:37:51 CST 2013
+ro.build.date.utc=1386520671
+ro.build.type=dev
+ro.build.user=santod
+ro.build.host=DevBoX
+ro.build.tags=release-keys
+ro.product.model=HTC One max
+ro.product.brand=HTC
+ro.product.name=brightstarus_wwe
+ro.product.device=t6wl
+ro.product.board=
+ro.product.cpu.abi=armeabi-v7a
+ro.product.cpu.abi2=armeabi
+ro.product.manufacturer=HTC
+ro.product.locale.language=en
+ro.product.locale.region=US
+ro.wifi.channels=
+ro.board.platform=msm8960
+# ro.build.product is obsolete; use ro.product.device
+ro.build.product=t6wl
+# Do not try to parse ro.build.description or .fingerprint
+ro.build.description=3.62.1700.1 CL288144 release-keys
+ro.build.fingerprint=VERIZON/m7wlv/m7wlv:4.4.2/KOT49H.H1/288144:user/release-keys
+ro.build.characteristics=nosdcard
+ro.product.version=3.62.1700.1
+# end build properties
+#
+# from device/htc/m7wlv/system.prop
+#
+dalvik.vm.heapsize=384m
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=2m
+
+#
+#system props for display
+#
+debug.enabletr=true
+ro.hwui.renderer.disable_opaque=true
+ro.sf.lcd_density=400
+persist.hwc.mdpcomp.enable=true
+debug.mdpcomp.maxlayer=3
+
+#
+# system prop for opengles version
+#
+# 131072 is decimal for 0x20000 to report version 2
+ro.opengles.version=196608
+
+
+rild.libpath=/system/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+
+# For workaround for ro.baseband property. QCT use the property same as radio version to determine the architecture.
+# But we hard code to mdm for M7.
+ro.baseband.arch = mdm
+
+#Add default network type for phone reference
+ro.telephony.default_network=10
+
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+
+#system props for time-services
+persist.timed.enable=true
+
+#system prop for switching gps driver to qmi
+persist.gps.qmienabled=true
+
+# set AGPS mode for SUPL TLS
+ro.ril.def.agps.mode=1
+# persist.radio.agps.mode=1
+
+# System property for cabl
+ro.qualcomm.cabl=0
+
+#
+# System prop for sending transmit power request to RIL during WiFi hotspot on/off
+#
+ro.ril.transmitpower=true
+
+# System props for audio
+persist.audio.fluence.mode=endfire
+persist.audio.vr.enable=false
+persist.audio.handset.mic=digital
+# System props for soundhound
+persist.htc.audio.pcm.samplerate=48000
+persist.htc.audio.pcm.channels=2
+htc.audio.global.state=0
+htc.audio.global.profile=0
+htc.audio.q6.topology=0
+htc.audio.global.speaker=1
+# Disable the off load for currently since this effect is under implementing.
+#audio.offload.disable=1
+
+# M7 Hardware Info
+ro.product.bluetooth=4.0
+ro.product.display_resolution = 5.9 inch 1080p resolution
+ro.product.main_camera = HTC UltraPixel Camera
+ro.product.front_camera = 2.1M
+ro.product.processor = Quadcore
+ro.product.ram = 2GB
+ro.product.wifi = 802.11 a/b/g/n/ac
+
+#SSD_BT+ bluetooth
+#
+# system prop for bluetooth logcat/snoop enable
+#
+#bluetooth.hcidump.enabled=1
+
+#
+# system prop for Bluetooth Dialup Networking
+#
+ro.qualcomm.bluetooth.dun=false
+
+# system prop for Bluetooth FTP profile
+ro.qualcomm.bluetooth.ftp=true
+#
+# system property for Bluetooth Handsfree Profile Wide Band Speech
+#
+ro.qualcomm.bluetooth.hfp.wbs=false
+#
+#system prop for Bluetooth hci transport
+ro.qualcomm.bt.hci_transport=smd
+#
+# system prop for requesting Master role in incoming Bluetooth connection.
+#
+ro.bluetooth.request.master=true
+#
+# system prop for Bluetooth Auto connect for remote initated connections
+#
+ro.bluetooth.remote.autoconnect=true
+# system property for Bluetooth discoverability time out in seconds
+# 0: Always discoverable
+#debug.bt.discoverable_time=0
+
+# system property for Bluetooth Hardware information
+ro.product.bluetooth=4.0
+
+# config fm rssi threshold
+service.qct.fm.rssi=116
+
+# system property for qcom Bluetooth stack
+ro.qc.bluetooth.stack=bluedroid
+
+# system property for bdaddr
+ro.bt.bdaddr_path = /sys/module/htc_bdaddress/parameters/bdaddress
+
+# BLE TAG (HtcBluetoothLeProfiles)
+ro.bt.ble_tag = 1
+
+#SSD_BT- bluetooth
+
+# wifi
+wifi.softap.interface=wlan0
+wifi.softapconcurrent.interface=softap.0
+wifi.miracastconcurrent.scan=WCN3680
+init.svc.wpa_supplicant=
+init.svc.dhcpcd_wlan0=
+dhcp.wlan0.autoip=
+dhcp.wlan0.dns1=
+dhcp.wlan0.dns2=
+dhcp.wlan0.dns3=
+dhcp.wlan0.dns4=
+dhcp.wlan0.gateway=
+dhcp.wlan0.ipaddress=
+dhcp.wlan0.leasetime=
+dhcp.wlan0.mask=
+dhcp.wlan0.ooxx=
+dhcp.wlan0.pid=
+dhcp.wlan0.reason=
+dhcp.wlan0.result=
+dhcp.wlan0.server=
+net.wlan0.dns1=
+net.wlan0.dns2=
+wifi.wpa_supp_ready=
+wlan.driver.status=
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=15
+persist.wifi.v6=true
+persist.wifi.v6.rs.count=5
+persist.wifi.v6.rs.timeout=5
+
+# Support HW reset
+ro.product.hwreset = 1
+ro.product.hwreset.timer1 = 6
+ro.product.hwreset.timer2 = 9
+
+#
+#Simulate sdcard on /data/media
+#
+persist.fuse_sdcard=true
+# ro.storage_structure: define the storage structure of this project
+# FUSE: 0x8, FAT: 0x4, SD: 0x2, INS: 0x1
+# Example: If the project has FUSE with SD card, the value should be defined as 10 (dec)
+ro.storage_structure = 10
+
+# ro.storage_encryption_type: define the storage encryption type of this project
+# not support encryption: 0x0 block level: 0x1 file level: 0x2
+ro.storage_encryption_type = 2
+
+#For usb storage
+ro.usb_host = 1
+
+# For VOLD storage master key encryption  algorithm scrypt
+ro.crypto.scrypt_params=16:3:1
+
+# T6 SGLTE set default network type GSM/WCDMA/LTE auto
+persist.radio.prefer.network = 9
+
+#
+# ADDITIONAL_BUILD_PROPERTIES
+#
+ro.carrier=unknown
+ro.config.ringtone=Themos.ogg
+ro.config.notification_sound=Tejat.ogg
+ro.config.alarm_alert=Oxygen.ogg
+drm.service.enabled=true
+keyguard.no_require_sim=true
+ro.setupwizard.mode=OPTIONAL
+ro.com.google.gmsversion=4.4.2_r1
+ro.vendor.extension_library=/system/lib/libqc-opt.so
+persist.sys.dalvik.vm.lib=libdvm.so
+net.bt.name=Android
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
