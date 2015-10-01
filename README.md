@@ -1,1 +1,1 @@
-# HTC One MAX
+# HTC One MAX (model t6)
