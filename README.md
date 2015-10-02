@@ -1,1 +1,1 @@
-# HTC One MAX (model t6)
+MIUI V7 Patchrom for HTC One MAX (model t6)
